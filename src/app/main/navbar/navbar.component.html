@@ -1,1 +1,13 @@
-<p>navbar works!</p>
+<div fxLayout="row" fxLayoutAlign="space-between center">
+    <button mat-icon-button (click)="openMenu()">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-chip-list>
+        <mat-chip routerLink="/timer">タイマー</mat-chip>
+        <mat-chip routerLink="/stop-watch">ストップウォッチ</mat-chip>
+        <mat-chip routerLink="/pomodoro">ポモドーロ</mat-chip>
+    </mat-chip-list>
+
+    <div></div>
+</div>

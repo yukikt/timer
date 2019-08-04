@@ -1,6 +1,4 @@
-<p>main works!</p>
-
-<app-navbar></app-navbar>
-<app-sidebar></app-sidebar>
-<app-footer></app-footer>
+<app-navbar (event)="openMenu()"></app-navbar>
+<app-sidebar *ngIf="item" [item]="item" (event)="closeMenu()"></app-sidebar>
 <app-content></app-content>
+<app-footer></app-footer>

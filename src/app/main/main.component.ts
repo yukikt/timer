@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  item = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  openMenu() {
+    this.item = true;
+  }
+
+  closeMenu() {
+    this.item = false;
   }
 
 }

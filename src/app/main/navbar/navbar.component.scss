@@ -1,0 +1,15 @@
+:host {
+    .mat-chip {
+        width: 160px;
+        text-align: center;
+        display: inline-block;
+
+        &.active {
+
+        }
+
+        &:not(:last-child) {
+            margin-right: 36px;
+        }
+    }
+}

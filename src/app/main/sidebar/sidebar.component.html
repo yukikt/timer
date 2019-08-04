@@ -1,1 +1,37 @@
-<p>sidebar works!</p>
+<div>
+    <button mat-icon-button (click)="closeMenu()">
+        <mat-icon>chevron_left</mat-icon>
+    </button>
+    <h1>Stay Focused</h1>
+
+    <ul>
+        <li routerLink="/timer">タイマー</li>
+        <li routerLink="/stop-watch">ストップウォッチ</li>
+        <li routerLink="/pomodoro">ポモドーロ</li>
+        <li>設定</li>
+    </ul>
+
+    <div>
+        <section>
+            <p>カラーモード</p>
+            <mat-radio-group fxLayout="column">
+                <mat-radio-button value="1">ライトモード</mat-radio-button>
+                <mat-radio-button value="2">ダークモード</mat-radio-button>
+            </mat-radio-group>
+        </section>
+
+
+        <section>
+            <p>ミュートモード</p>
+            <mat-slide-toggle>ミュート</mat-slide-toggle>
+        </section>
+
+        <section>
+            <p>音選択</p>
+            <mat-radio-group fxLayout="column">
+                <mat-radio-button value="1">ベル</mat-radio-button>
+                <mat-radio-button value="2">デジタル</mat-radio-button>
+            </mat-radio-group>
+        </section>
+    </div>
+</div>
